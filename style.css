@@ -13,7 +13,7 @@ html {
   min-inline-size: 100vw;
   min-block-size: 100vh;
   background-image: url(/images/pattern-background-mobile.svg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   padding: 2rem;
 
