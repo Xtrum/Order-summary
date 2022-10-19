@@ -15,6 +15,7 @@ html {
   background-image: url(/images/pattern-background-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: #E1E9FF;
   padding: 2rem;
 
   display: grid;
