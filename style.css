@@ -71,7 +71,9 @@ body {
   background-color: #f5f7ff;
   border-radius: 0.5rem;
   block-size: auto;
+  padding: 1rem;
   padding-inline: 1rem;
+
 }
 
 .align{
@@ -93,6 +95,10 @@ body {
 .two__svg img {
   inline-size: 2rem;
   margin-inline-end: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px #7280a75d;
+  transform: translate(0%, 0%);
+  animation: Xtrum 5s infinite linear;
 }
 
 .three {
@@ -105,6 +111,7 @@ body {
   font-size: 1rem;
   font-weight: 700;
   color: #7280a7;
+  padding-block-end: 1rem;
 }
 
 .three a:hover{
@@ -132,10 +139,11 @@ button {
   color:#f5f7ff;
   border-radius: 1rem;
   block-size: 3rem;
+  margin: 1rem 0;
   border: 0;
   font-size: 1rem;
   font-weight: 700;
-  box-shadow: 1px 5px 15px 0 #7280a79c;
+  box-shadow: 1px 8px 15px 0 #7280a79c;
 }
 
 .ann{
@@ -146,6 +154,16 @@ button {
 button:hover{
   background-color: #7280a7;
   cursor: pointer;
+}
+
+@keyframes Xtrum {
+  0%{
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  100%{
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+  
 }
 
 @media (min-width:30rem) {
