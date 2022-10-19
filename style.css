@@ -10,25 +10,29 @@
 }
 
 html {
-  inline-size: 100vw;
-  block-size: 100vh;
+  min-inline-size: 100vw;
+  min-block-size: 100vh;
   background-image: url(/images/pattern-background-mobile.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 3rem;
+  padding: 2rem;
+
+  display: grid;
+  place-content: center;
 }
 
 body {
   font-family: "Red Hat Text", sans-serif;
-  inline-size: 30rem;
-  max-block-size: 100%;
+  inline-size: 80%;
+  min-inline-size: 25rem;
+  block-size: 100%;
   border-radius: 2rem;
   box-shadow: -1px 8px 15px #7280a773;
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  overflow: hidden;
+  flex: 1 0;
+  margin: 0 auto;
 }
 
 .class {
@@ -62,7 +66,7 @@ body {
 
 .two {
   margin: 1rem 0;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: #f5f7ff;
   border-radius: 0.5rem;
@@ -70,17 +74,20 @@ body {
   padding-inline: 1rem;
 }
 
-.two a{
-  margin-inline-start: 6rem;
+.align{
+  display: flex;
+  align-items: center;
 }
+
 
 .two a:hover{
   text-decoration: none;
   color: #7280a7;
 }
+
 .two__svg{
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .two__svg img {
@@ -138,6 +145,7 @@ button {
 
 button:hover{
   background-color: #7280a7;
+  cursor: pointer;
 }
 
 @media (min-width:30rem) {
@@ -147,5 +155,7 @@ button:hover{
 
   body{
       max-inline-size: 35rem;
+      block-size: 100%;
   }
+
 }
